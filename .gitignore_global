@@ -15,16 +15,16 @@
 *.dmg
 *.gz
 *.iso
-*.jar
+#*.jar
 *.rar
 *.tar
-*.zip
+#*.zip
 
 # Logs and databases #
 ######################
 *.log
-*.sql
-*.sqlite
+#*.sql
+#*.sqlite
 
 # OS generated files #
 ######################
