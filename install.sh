@@ -19,7 +19,7 @@ curl -s "https://get.sdkman.io" | bash
 
 # Bash-it
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-~/.bash_it/install.sh
+~/.bash_it/install.sh --silent
 
 
 # Set OS X preferences
