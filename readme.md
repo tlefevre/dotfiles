@@ -13,13 +13,35 @@ Follow these install instructions to setup a new Mac.
 1. Update OS X to the latest version with the App Store
 1. Install Xcode from the App Store, open it and accept the license agreement
 1. Install OS X Command Line Tools by running `xcode-select --install`
-1. Copy public and private SSH keys to `~/.ssh` and make sure they're set to `600`
+1. From USB key:
+   1. Copy public and private SSH keys to `~/.ssh` and make sure they're set to `600`
+   1. Copy `gradle.properties`to `~/.gradle`
+   1. Copy hosts `/etc/hosts`
 1. Clone this repo to `~/.dotfiles`
 1. Run `install.sh` to start the installation
 1. Make sure Dropbox is set up and synced
 1. Restart your computer to finalize the process
+1. Enable bash-it plugins (jenv, sdkman)
+1. Add to ENV:
+    1. `GRAILS_OPTS=-Xmx2G -Xms512m -XX:MaxPermSize=512m -Dfile.encoding=UTF-8 -Djava.encoding=UTF-8`
+    1. HOMEBREW_CASK_OPTS (maybe)
+1. Setup [jenv](http://www.jenv.be/)
+1. Import license and settings to BetterTouchTool
 
 Your Mac is now ready to use!
+
+## Development
+
+Install
+
+1. [mountebank](http://www.mbtest.org/docs/install)
+
+
+## Notes
+* Consider using [Mathias](https://github.com/mathiasbynens/dotfiles) `.bash_prompt`
+
+* More OSX tweeks: https://www.skrauth.de/blog/2015/osx-settings-via-terminal/
+
 
 ## Your Own Dotfiles
 
@@ -29,10 +51,10 @@ Go through the [`.osx`](./.osx) file and adjust the settings to your liking. You
 
 Check out the [`Brewfile`](./Brewfile) file and adjust the apps you want to install for your machine. Use [their search page](https://caskroom.github.io/search) to check if the app you want to install is available.
 
-
+### Mackup
 When installing these dotfiles for the first time you'll need to backup all of your settings with Mackup. Install and backup your settings with the command below. Your settings will be synced to your Dropbox so you can use them to sync between computers and reinstall them when reinstalling your Mac. If you want to save your settings to a different folder or different medium than Dropbox, [checkout the documentation](https://github.com/lra/mackup#supported-storages).
 
-```zsh
+```bash
 brew install mackup
 mackup backup
 ```
