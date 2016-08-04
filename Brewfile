@@ -1,3 +1,6 @@
+## https://github.com/Homebrew/homebrew-bundle
+# Look at 'brew bundle cleanup'
+
 # Taps
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
