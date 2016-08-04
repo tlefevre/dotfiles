@@ -31,7 +31,7 @@ brew 'wget'
 # Development
 brew 'mysql', restart_service: true, conflicts_with: ['homebrew/versions/mysql56']
 brew 'autojump'
-brew 'docker'
+#brew 'docker' #Untill it is native on mac
 brew 'jenv'
 
 # Apps
@@ -60,3 +60,17 @@ cask 'sourcetree'
 cask 'intellij-idea'
 cask 'lastpass'
 cask 'postgres'
+
+# New
+cask 'caffeine'
+cask 'keyboardcleantool'
+cask 'commander-one'
+
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'quicklook-csv'
+cask 'qlstephen'
+cask 'betterzipql'
+cask 'suspicious-package'
