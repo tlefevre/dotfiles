@@ -8,12 +8,15 @@ if test ! $(which brew); then
 fi
 
 # Update Homebrew recipes
+echo "Updating homebrew"
 brew update
 
 # Upgrade any already-installed formulae.
+echo "Upgrading all homebrew formulae"
 brew upgrade --all
 
 # Install all our dependencies with bundle (See Brewfile)
+echo "Installing bundled formulae..."
 brew tap homebrew/bundle
 brew bundle
 
@@ -33,13 +36,8 @@ fi
 
 # Copy custom stuff to .bash_it
 cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/
-cp ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
+cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
 
-# Update Bash-it
-bash-it update
-
-# Reload
-source ~/.bash_profile
 
 # Set OS X preferences
 # We will run this last because this will reload the shell
