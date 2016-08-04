@@ -1,12 +1,7 @@
 # Applications
 
-Most applications get installed through Homebrew Cask. The apps below need to be installed from the App Store because I bought them there and I don't have license keys for them.
+Most applications get installed through Homebrew Cask. 
+The apps below need to be installed from the App Store or other party.
 
-- 1Password
-- Byword
-- Giphy Capture
-- Paw
-- Sip
-- Sketch 2
-- Tweetbot
-- Wunderlist
+- [Copy'em Paste](http://www.apprywhere.com/copy-em-paste.html)
+- [Docker](https://www.docker.com/)

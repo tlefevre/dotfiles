@@ -27,6 +27,7 @@ Follow these install instructions to setup a new Mac.
     1. HOMEBREW_CASK_OPTS (maybe)
 1. Setup [jenv](http://www.jenv.be/)
 1. Import license and settings to BetterTouchTool
+1. [Disable guest user](http://apple.stackexchange.com/questions/169980/how-to-disable-that-guest-user-from-appearing-at-the-os-x-10-8-5-login-screen)
 
 Your Mac is now ready to use!
 
