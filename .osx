@@ -2,6 +2,8 @@
 
 # Thanks to Mathias Bynens! https://mths.be/osx
 
+# And: https://gist.github.com/brandonb927/3195465
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -12,8 +14,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-# Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+# Set standby delay to 4 hours (default is 1 hour)
+sudo pmset -a standbydelay 14400
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
@@ -48,6 +50,14 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+# Disable the sudden motion sensor? (it's not useful for SSDs/current MacBooks)
+sudo pmset -a sms 0
+
+# Setting trackpad & mouse speed to a reasonable number
+defaults write -g com.apple.trackpad.scaling 2
+defaults write -g com.apple.mouse.scaling 2.5
+
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
