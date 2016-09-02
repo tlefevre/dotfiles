@@ -12,6 +12,8 @@ alias push="git push"
 alias skattunnel='ssh -N -L 127.0.0.1:7011:sktdemo01esb01:7011 -L 127.0.0.1:7013:sktdemo01esb01:7013 admin@sktdemo01jmp01.ccta.dk'
 alias skatdualnetwork='ccta'
 
+# sublime text
+alias s='subl'
 
 # Lock screen wallpaper
 alias lockscreenwallpaperdarlek='cp ~/Dropbox\ \(GR8Conf\)/mac/lockscreens/darlek.png /Library/Caches/com.apple.desktop.admin.png'
