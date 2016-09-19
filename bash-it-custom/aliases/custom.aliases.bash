@@ -4,6 +4,9 @@ alias gwcc='./gradlew clean check'
 alias gwcodenarc='./gradlew codenarcMain codenarcTest codenarcIntegrationTest'
 alias gw='./gradlew'
 
+## Open reports
+alias opentestreports='open build/reports/tests/index.html'
+
 ## GIT
 alias pull="git pull"
 alias push="git push"
@@ -23,6 +26,7 @@ alias path='echo -e ${PATH//:/\\n}'
 
 # QuickLook from the terminal
 alias ql='qlmanage -p "$@" > /dev/null'
+
 
 ########################################################################################################################
 ## From bash-it -> osx.aliases.bash
