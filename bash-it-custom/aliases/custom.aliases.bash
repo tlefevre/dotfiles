@@ -1,4 +1,8 @@
 #@IgnoreInspection BashAddShebang
+
+## COPY
+# cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/
+
 ## Gradle
 alias gwcc='./gradlew clean check'
 alias gwcodenarc='./gradlew codenarcMain codenarcTest codenarcIntegrationTest'
@@ -10,6 +14,7 @@ alias opentestreports='open build/reports/tests/index.html'
 ## GIT
 alias pull="git pull"
 alias push="git push"
+alias openGithubPage="openGithubPageFunc"
 
 ## SKAT
 alias skattunnel='ssh -N -L 127.0.0.1:7011:sktdemo01esb01:7011 -L 127.0.0.1:7013:sktdemo01esb01:7013 admin@sktdemo01jmp01.ccta.dk'

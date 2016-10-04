@@ -22,9 +22,6 @@ Follow these install instructions to setup a new Mac.
 1. Make sure Dropbox is set up and synced
 1. Restart your computer to finalize the process
 1. Enable bash-it plugins (jenv, sdkman)
-1. Add to ENV:
-    1. `GRAILS_OPTS=-Xmx2G -Xms512m -XX:MaxPermSize=512m -Dfile.encoding=UTF-8 -Djava.encoding=UTF-8`
-    1. HOMEBREW_CASK_OPTS (maybe)
 1. Setup [jenv](http://www.jenv.be/)
 1. Import license and settings to BetterTouchTool
 1. [Disable guest user](http://apple.stackexchange.com/questions/169980/how-to-disable-that-guest-user-from-appearing-at-the-os-x-10-8-5-login-screen)
