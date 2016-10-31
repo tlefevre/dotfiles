@@ -41,6 +41,10 @@ alias path='echo -e ${PATH//:/\\n}'
 alias ql='qlmanage -p "$@" > /dev/null'
 
 
+## Homebrew
+alias updateAllCasks='brew cask list | xargs brew cask install --force'
+
+
 ########################################################################################################################
 ## From bash-it -> osx.aliases.bash
 ########################################################################################################################

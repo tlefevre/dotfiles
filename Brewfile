@@ -23,6 +23,9 @@ brew 'bash'
 # Install more recent versions of some OS X tools
 brew 'homebrew/dupes/grep'
 
+# CLI to App Store
+brew 'mas'
+
 # Install Binaries
 brew 'git'
 brew 'tree'
