@@ -73,9 +73,9 @@ unalias py
 unalias ipy
 unalias edit
 unalias pager
-unalias pcurl
+#unalias pcurl
 unalias pass
-unalias shuf
+#unalias shuf
 
 
 ########################################################################################################################
