@@ -31,6 +31,8 @@ sudo add-apt-repository -y ppa:diodon-team/stable
 sudo apt-get update
 sudo apt-get install -y diodon
 
+sudo apt install nautilus-dropbox
+
 
 
 #MySQL
