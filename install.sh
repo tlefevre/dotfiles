@@ -20,3 +20,6 @@ cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
 
 
 source ./apt-get-script.sh
+
+
+# Enable stuff in bash-it
