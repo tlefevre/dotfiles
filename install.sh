@@ -19,6 +19,9 @@ fi
 # Insall binaries
 source ./apt-get-script.sh
 
+# Add custom keybindings
+source ./custom_keybindings.sh
+
 # Enable stuff in bash-it
 source ./bash-it.sh
 # Copy custom stuff to .bash_it
@@ -33,6 +36,13 @@ tar xjvf lplinux.tar.bz2
 cd lplinux && ./install_lastpass.sh
 
 # Paper theme
+echo "##########################################################################################"
+echo "Download Paper theme: https://snwh.org/paper/download"
+echo "Run the following:"
+echo "sudo dpkg -i paper*.deb"
+echo "sudo apt-get install -f"
+echo "##########################################################################################"
+
 #https://snwh.org/paper/download
 #sudo dpkg -i paper*.deb
 #sudo apt-get install -f
