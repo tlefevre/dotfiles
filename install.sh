@@ -36,11 +36,9 @@ cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
 ##########################################################################################
 ## Backup:
 # https://www.ostechnix.com/systemback-restore-ubuntu-desktop-and-server-to-previous-state/
-
-
 ##########################################################################################
 
 
-####
+#### DO THIS
 # shutdown -r now
 ####
