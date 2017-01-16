@@ -3,8 +3,8 @@
 echo "Installing software"
 
 echo "Updating and upgrading apt-get"
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 
 echo "Installing..."
 #Chrome
