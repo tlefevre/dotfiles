@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+############### NOGET MED ECHO!!!
+
 sudo apt-get update
 sudo apt-get upgrade
 
@@ -23,7 +25,7 @@ sudo apt-get install -y oracle-java8-installer
 sudo apt-get install -y ubuntu-make
 #sudo umake ide idea-ultimate
 
-sudo add-apt-repository ppa:aacebedo/fasd
+sudo add-apt-repository -y ppa:aacebedo/fasd
 sudo apt-get update
 sudo apt-get install -y fasd
 
@@ -34,7 +36,13 @@ sudo apt-get install -y diodon
 sudo apt install nautilus-dropbox
 
 
+sudo add-apt-repository -y universe
+sudo apt-get update
+sudo apt-get install -y libgconf2-4 libnss3-1d libxss1
+sudo apt-get install -y unity-tweak-tool
+
 
 #MySQL
 sudo apt-get install mysql-server
-sudo mysql_secure_installation
+## if around this!
+#sudo mysql_secure_installation
