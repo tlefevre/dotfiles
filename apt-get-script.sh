@@ -23,10 +23,6 @@ sudo apt-get update
 sudo apt-get install -y oracle-java7-installer
 sudo apt-get install -y oracle-java8-installer
 
-#Ubuntu make
-sudo apt-get install -y ubuntu-make
-#sudo umake ide idea-ultimate
-
 sudo add-apt-repository -y ppa:aacebedo/fasd
 sudo apt-get update
 sudo apt-get install -y fasd
@@ -42,6 +38,15 @@ sudo apt-get update
 sudo apt-get install -y libgconf2-4 libnss3-1d libxss1
 sudo apt-get install -y unity-tweak-tool
 
+# Because: http://askubuntu.com/questions/856659/backup-does-not-work-on-ubuntu-16-10-and-16-04
+sudo apt-get install -y duplicity
+
+# Preview (http://www.omgubuntu.co.uk/2016/09/gnome-sushi-mac-quick-look-nautilus)
+sudo apt-get install -y gnome-sushi
+
+#Ubuntu make
+sudo apt-get install -y ubuntu-make
+sudo umake ide idea-ultimate
 
 #MySQL
 if [ -f ! /etc/init.d/mysql* ]; then

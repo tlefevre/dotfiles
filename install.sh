@@ -16,8 +16,11 @@ fi
 
 
 
-# Insall binaries
+# Insall apt binaries
 source ./apt-get-script.sh
+
+# Insall non apt binaries
+source ./install-other-script.sh
 
 # Add custom keybindings
 source ./custom_keybindings.sh
@@ -29,23 +32,13 @@ cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/
 cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
 
 
-# Lastpass
-echo "Installing Lastpass..."
-wget https://lastpass.com/lplinux.tar.bz2
-tar xjvf lplinux.tar.bz2
-cd lplinux && ./install_lastpass.sh
 
-# Paper theme
-echo "##########################################################################################"
-echo "Download Paper theme: https://snwh.org/paper/download"
-echo "Run the following:"
-echo "sudo dpkg -i paper*.deb"
-echo "sudo apt-get install -f"
-echo "##########################################################################################"
+##########################################################################################
+## Backup:
+# https://www.ostechnix.com/systemback-restore-ubuntu-desktop-and-server-to-previous-state/
 
-#https://snwh.org/paper/download
-#sudo dpkg -i paper*.deb
-#sudo apt-get install -f
+
+##########################################################################################
 
 
 ####
