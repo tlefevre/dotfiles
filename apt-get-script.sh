@@ -31,7 +31,7 @@ sudo add-apt-repository -y ppa:diodon-team/stable
 sudo apt-get update
 sudo apt-get install -y diodon
 
-sudo apt install nautilus-dropbox
+sudo apt install -y nautilus-dropbox
 
 sudo add-apt-repository -y universe
 sudo apt-get update

@@ -32,7 +32,7 @@ sudo add-apt-repository -y ppa:snwh/pulp
 sudo apt-get update
 #sudo apt-get install paper-icon-theme
 #sudo apt-get install paper-gtk-theme
-sudo apt-get install paper-cursor-theme
+sudo apt-get install -y paper-cursor-theme
 
 
 
