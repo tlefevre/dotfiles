@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 echo "Installing non-apt software..."
 
@@ -28,7 +28,7 @@ wget -O paper-gtk-theme.deb "https://snwh.org/paper/download.php?owner=snwh&ppa=
 sudo dpkg -i paper*.deb
 sudo apt-get install -f
 
-sudo add-apt-repository ppa:snwh/pulp
+sudo add-apt-repository -y ppa:snwh/pulp
 sudo apt-get update
 #sudo apt-get install paper-icon-theme
 #sudo apt-get install paper-gtk-theme

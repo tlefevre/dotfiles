@@ -1,11 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 source $BASH_IT/bash_it.sh
 
 echo "Setting up bash-it..."
 
 echo "Setting up aliases"
-bash-it enable alias general
+bash-it enable alias general clipboard
 
 echo "Setting up plugins"
 bash-it enable plugin alias-completion fasd git history sdkman
