@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
-############### NOGET MED ECHO!!!
+echo "Installing software"
 
+echo "Updating and upgrading apt-get"
 sudo apt-get update
 sudo apt-get upgrade
 
+echo "Installing..."
 #Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
@@ -35,7 +37,6 @@ sudo apt-get install -y diodon
 
 sudo apt install nautilus-dropbox
 
-
 sudo add-apt-repository -y universe
 sudo apt-get update
 sudo apt-get install -y libgconf2-4 libnss3-1d libxss1
@@ -43,6 +44,11 @@ sudo apt-get install -y unity-tweak-tool
 
 
 #MySQL
-sudo apt-get install mysql-server
-## if around this!
-#sudo mysql_secure_installation
+if [ -f ! /etc/init.d/mysql* ]; then
+    sudo apt-get install mysql-server
+    # only run init script first time
+    sudo mysql_secure_installation
+fi
+
+
+echo "Done installing!"
