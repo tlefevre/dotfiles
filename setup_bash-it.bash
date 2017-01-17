@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-source $BASH_IT/bash_it.sh
+source ~/.bashrc
 
 echo "Setting up bash-it..."
 

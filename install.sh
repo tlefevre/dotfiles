@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "Setting up Ubuntu..."
 
@@ -15,18 +15,17 @@ if [ ! $BASH_IT ]; then
 fi
 
 
+# Install apt binaries
+source setup_apt-get.bash
 
-# Insall apt binaries
-source ./apt-get-script.sh
-
-# Insall non apt binaries
-source ./install-other-script.sh
+# Insatll non apt binaries
+source setup_other_apps.bash
 
 # Add custom keybindings
-source ./custom_keybindings.sh
+source setup_custom_keybindings.bash
 
 # Enable stuff in bash-it
-source ./bash-it.sh
+source setup_bash-it.bash
 # Copy custom stuff to .bash_it
 cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/
 cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
