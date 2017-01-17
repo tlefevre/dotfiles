@@ -33,7 +33,7 @@ Your Ubuntu is now ready to use!
 Further customizations.
 
 1. Enable Paper Theme
-   1. Unity Tweak Tool -> Theme
+   1. Unity Tweak Tool -> Theme -> Theme, Icon, Cursor
 1. Disable all annoying keyboard shortcuts
    1. Keyboard -> Shortcuts
 
