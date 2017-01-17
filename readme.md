@@ -12,6 +12,8 @@ Feel free to explore, learn and copy parts for your own dotfiles. Enjoy!
 
 Follow these install instructions to setup a new Ubuntu.
 
+1. Set main download server
+   1. Software & updates -> Ubuntu software -> Download from: Main server
 1. From an USB key:
    1. Copy public and private SSH keys to `~/.ssh` and make sure they're set to `600`
    1. Copy `gradle.properties`to `~/.gradle`
