@@ -38,6 +38,13 @@ sudo apt-get update
 sudo apt-get install -y libgconf2-4 libnss3-1d libxss1
 sudo apt-get install -y unity-tweak-tool
 
+sudo add-apt-repository -y ppa:snwh/pulp
+sudo apt-get update
+sudo apt-get install paper-icon-theme
+sudo apt-get install paper-gtk-theme
+sudo apt-get install paper-cursor-theme
+
+
 # Because: http://askubuntu.com/questions/856659/backup-does-not-work-on-ubuntu-16-10-and-16-04
 sudo apt-get install -y duplicity
 
