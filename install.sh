@@ -31,6 +31,8 @@ cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/
 cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
 
 
+# Install sdkman stuff
+source setup_sdkman.bash
 
 ##########################################################################################
 ## Backup:
