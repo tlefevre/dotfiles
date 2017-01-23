@@ -15,7 +15,7 @@ Follow these install instructions to setup a new Ubuntu.
 1. Set main download server
    1. Software & updates -> Ubuntu software -> Download from: Main server
 1. From an USB key:
-   1. Copy public and private SSH keys to `~/.ssh` and make sure they're set to `600`
+   1. Copy public and private SSH keys to `~/.ssh`
    1. Copy `gradle.properties`to `~/.gradle`
    1. Copy hosts `/etc/hosts`
 1. Install `git`
@@ -39,10 +39,6 @@ Further customizations.
 1. Disable all annoying keyboard shortcuts
    1. Keyboard -> Shortcuts
 
-
-
-## Notes
-* Consider using [Mathias](https://github.com/mathiasbynens/dotfiles) `.bash_prompt`
 
 
 ## Your Own Dotfiles
