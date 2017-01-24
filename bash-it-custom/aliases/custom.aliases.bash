@@ -16,8 +16,8 @@ alias gcta='clear && grails clean-all && grails compile && grails test-app'
 alias opentests='open target/test-reports/html/index.html'
 
 ## JAVA
-alias useJava8='yes | sudo apt-get install oracle-java8-set-default && echo ">>> Open a new shell <<<"'
-alias useJava7='yes | sudo apt-get install oracle-java7-set-default && echo ">>> Open a new shell <<<"'
+alias useJava8='yes | sudo apt-get install oracle-java8-set-default && source ~/.bashrc'
+alias useJava7='yes | sudo apt-get install oracle-java7-set-default && source ~/.bashrc'
 
 ## Open reports
 alias opentestreports='open build/reports/tests/index.html'
