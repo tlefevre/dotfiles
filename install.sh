@@ -45,6 +45,9 @@ cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
 # Install sdkman stuff
 source setup_sdkman.bash
 
+# Install custom scripts
+source setup_scripts.bash
+
 ##########################################################################################
 ## Backup:
 # https://www.ostechnix.com/systemback-restore-ubuntu-desktop-and-server-to-previous-state/
