@@ -3,7 +3,8 @@
 ## COPY
 # cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
 
-export GRAILS_OPTS="-Xmx2G -Xms512m -Dfile.encoding=UTF-8 -Djava.encoding=UTF-8"
+#export GRAILS_OPTS="-Xmx2G -Xms512m -Dfile.encoding=UTF-8 -Djava.encoding=UTF-8"
+export GRAILS_OPTS="-Xmx2G -Xms512m -XX:MaxPermSize=512m -Dfile.encoding=UTF-8 -Djava.encoding=UTF-8"
 
 # Switch between multiple java versions -> http://askubuntu.com/a/845300
 export JAVA_HOME="$(jrunscript -e 'java.lang.System.out.println(java.lang.System.getProperty("java.home"));')"
@@ -27,6 +28,3 @@ function ccta() {
 }
 
 
-function openGithubPageFunc(){
-    open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1
-}
