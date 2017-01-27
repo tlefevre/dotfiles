@@ -45,6 +45,10 @@ sudo apt-get install paper-gtk-theme
 sudo apt-get install paper-cursor-theme
 
 
+sudo apt-get install -y wkhtmltopdf
+
+
+
 # Because: http://askubuntu.com/questions/856659/backup-does-not-work-on-ubuntu-16-10-and-16-04
 sudo apt-get install -y duplicity
 
