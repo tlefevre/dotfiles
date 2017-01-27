@@ -41,4 +41,4 @@ cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
 
 # Set OS X preferences
 # We will run this last because this will reload the shell
-source .osx
+source ../.osx

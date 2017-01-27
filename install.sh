@@ -27,26 +27,22 @@ fi
 
 
 # Install apt binaries
-source setup_apt-get.bash
+source scripts/setup_apt-get.bash
 
 # Insatll non apt binaries
-source setup_other_apps.bash
+source scripts/setup_other_apps.bash
 
 # Add custom keybindings
-source setup_custom_keybindings.bash
+source scripts/setup_custom_keybindings.bash
 
 # Enable stuff in bash-it
-source setup_bash-it.bash
-# Copy custom stuff to .bash_it
-cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/
-cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/
-
+source scripts/setup_bash-it.bash
 
 # Install sdkman stuff
-source setup_sdkman.bash
+source scripts/setup_sdkman.bash
 
 # Install custom scripts
-source setup_scripts.bash
+source scripts/setup_scripts.bash
 
 ##########################################################################################
 ## Backup:
