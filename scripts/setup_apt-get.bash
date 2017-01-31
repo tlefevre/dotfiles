@@ -47,6 +47,7 @@ sudo apt-get install paper-cursor-theme
 
 sudo apt-get install -y wkhtmltopdf
 
+sudo apt install -y docker.io
 
 
 # Because: http://askubuntu.com/questions/856659/backup-does-not-work-on-ubuntu-16-10-and-16-04
