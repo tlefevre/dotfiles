@@ -53,9 +53,13 @@ function runCodenarcCleanCheckExitIfFailure() {
     if ! $success; then
         return 1
     fi
+    notify-send 'Codenarc was successful'
+
     # If all is well run all tests
     if ! ./gradlew clean check; then
         xdg-open build/reports/tests/index.html &> /dev/null
         return 1
+    else
+        notify-send 'BUILD WAS SUCCESSFUL!'
     fi
 }
