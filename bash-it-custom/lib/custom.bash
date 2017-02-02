@@ -29,3 +29,33 @@ function ccta() {
 }
 
 
+##
+# Run all codenarc rules.
+# Opens the respective reports if they fail.
+# Run all tests if codenarc is happy!
+# Opens the test report if any test fail.
+##
+function runCodenarcCleanCheckExitIfFailure() {
+    success=true
+    if ! ./gradlew codenarcMain; then
+        xdg-open build/reports/codenarc/main.html &> /dev/null
+        success=false
+    fi
+    if ! ./gradlew codenarcTest; then
+        xdg-open build/reports/codenarc/test.html &> /dev/null
+        success=false
+    fi
+    if ! ./gradlew codenarcIntegrationTest; then
+        xdg-open build/reports/codenarc/integrationTest.html &> /dev/null
+        success=false
+    fi
+    # Exit if codenarc has failed
+    if ! $success; then
+        return 1
+    fi
+    # If all is well run all tests
+    if ! ./gradlew clean check; then
+        xdg-open build/reports/tests/index.html &> /dev/null
+        return 1
+    fi
+}

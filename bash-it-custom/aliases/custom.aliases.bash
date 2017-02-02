@@ -19,8 +19,13 @@ alias gcta='clear && grails clean-all && grails compile && grails test-app'
 alias useJava8='yes | sudo apt-get install oracle-java8-set-default && source ~/.bashrc'
 alias useJava7='yes | sudo apt-get install oracle-java7-set-default && source ~/.bashrc'
 
+## Bash-It
+alias copyBashItCustom='cp -v ~/.dotfiles/bash-it-custom/aliases/custom.aliases.bash ~/.bash_it/aliases/ && cp -v ~/.dotfiles/bash-it-custom/lib/custom.bash ~/.bash_it/lib/ && source ~/.bashrc'
+
 ## Open reports
 alias opentestreports='xdg-open build/reports/tests/index.html &> /dev/null'
+
+alias runall='runCodenarcCleanCheckExitIfFailure'
 
 ## GIT
 alias pull="git pull"
