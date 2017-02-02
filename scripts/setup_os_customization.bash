@@ -7,3 +7,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "'/usr/bin/diodon'"
 
 echo "Done setting up custom keybndings"
+
+
+
+gsettings set com.canonical.indicator.session show-real-name-on-panel true

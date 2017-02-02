@@ -49,6 +49,7 @@ sudo apt-get install -y wkhtmltopdf
 
 sudo apt install -y docker.io
 
+sudo apt-get install -y bleachbit
 
 # Because: http://askubuntu.com/questions/856659/backup-does-not-work-on-ubuntu-16-10-and-16-04
 sudo apt-get install -y duplicity
@@ -59,6 +60,18 @@ sudo apt-get install -y gnome-sushi
 # Ubuntu make
 sudo apt-get install -y ubuntu-make
 sudo umake ide idea-ultimate
+sudo umake ide datagrip
+
+
+# 1. Add the Spotify repository signing key to be able to verify downloaded packages
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+# 2. Add the Spotify repository
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+# 3. Update list of available packages
+sudo apt-get update
+# 4. Install Spotify
+sudo apt-get install -y spotify-client
+
 
 # MySQL
 if [ -f ! /etc/init.d/mysql* ]; then
@@ -71,6 +84,10 @@ fi
 sudo apt install -y virtualbox-qt virtualbox-ext-pack
 # Vagrant
 sudo apt install vagrant
+
+
+sudo apt install -y tlp tlp-rdw
+sudo tlp start
 
 
 

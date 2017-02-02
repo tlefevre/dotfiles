@@ -33,7 +33,7 @@ source scripts/setup_apt-get.bash
 source scripts/setup_other_apps.bash
 
 # Add custom keybindings
-source scripts/setup_custom_keybindings.bash
+source scripts/setup_os_customization.bash
 
 # Enable stuff in bash-it
 source scripts/setup_bash-it.bash
