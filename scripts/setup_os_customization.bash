@@ -8,6 +8,12 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 
 echo "Done setting up custom keybndings"
 
+echo "Tweaking UI"
 
+gsettings set com.canonical.indicator.datetime time-format 24-hour
+gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-hide-mode 1
+gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ edge-responsiveness 10.0
+
+echo "Done tweaking UI"
 
 gsettings set com.canonical.indicator.session show-real-name-on-panel true
