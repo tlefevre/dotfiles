@@ -49,6 +49,8 @@ sudo apt-get install -y paper-cursor-theme
 
 sudo apt-get install -y wkhtmltopdf
 
+sudo apt-get install -y vim
+
 # Insert docker install
 #sudo apt install -y docker.io
 
