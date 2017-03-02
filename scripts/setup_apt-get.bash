@@ -49,6 +49,7 @@ sudo apt-get install -y paper-cursor-theme
 
 sudo apt-get install -y wkhtmltopdf
 
+# Vim / Less stuff
 sudo apt-get install -y vim
 sudo apt-get install -y source-highlight
 
@@ -77,11 +78,19 @@ sudo apt-get install -y duplicity
 # Preview (http://www.omgubuntu.co.uk/2016/09/gnome-sushi-mac-quick-look-nautilus)
 sudo apt-get install -y gnome-sushi
 
-# Ubuntu make
+### Development stuff ###
 sudo apt-get install -y ubuntu-make
 sudo umake ide idea-ultimate
 sudo umake ide datagrip
 
+# NodeJS
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# Yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install -y yarn
 
 # 1. Add the Spotify repository signing key to be able to verify downloaded packages
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
