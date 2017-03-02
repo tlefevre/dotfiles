@@ -97,6 +97,9 @@ sudo apt install -y virtualbox-qt virtualbox-ext-pack
 # Vagrant
 sudo apt install -y vagrant
 
+# Database
+sudo apt install -y postgresql-client-common
+sudo apt install -y postgresql-client-9.5
 
 sudo apt install -y tlp tlp-rdw
 sudo tlp start
