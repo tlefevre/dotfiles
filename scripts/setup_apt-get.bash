@@ -50,6 +50,7 @@ sudo apt-get install -y paper-cursor-theme
 sudo apt-get install -y wkhtmltopdf
 
 sudo apt-get install -y vim
+sudo apt-get install -y source-highlight
 
 # Docker
 sudo apt-get install -y --no-install-recommends \

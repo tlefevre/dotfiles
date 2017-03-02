@@ -12,6 +12,11 @@ export JAVA_HOME="$(jrunscript -e 'java.lang.System.out.println(java.lang.System
 
 export LC_ALL=da_DK.UTF-8
 
+# Setting up less / vim 
+export VISUAL=VIM
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
+
 ## Removes (ugly!) clock char from bash-it theme
 export THEME_SHOW_CLOCK_CHAR=false
 
